@@ -1,4 +1,5 @@
 import { Linkedin, Mail, Phone } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/utils";
 
 export const Footer = () => {
   return (
@@ -50,7 +51,7 @@ export const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-6">Contato</h4>
             <ul className="space-y-4">
-              <li>
+              {/* <li>
                 <a 
                   href="mailto:contato@cettiagentics.com" 
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
@@ -58,17 +59,17 @@ export const Footer = () => {
                   <Mail className="h-5 w-5 text-primary" />
                   contato@cettiagentics.com
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a 
-                  href="tel:+5511999999999" 
+                  href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                 >
                   <Phone className="h-5 w-5 text-primary" />
-                  +55 11 99999-9999
+                  +55 61 9 9460-6938
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a 
                   href="https://linkedin.com/company/cettiagentics" 
                   target="_blank"
@@ -78,7 +79,7 @@ export const Footer = () => {
                   <Linkedin className="h-5 w-5 text-primary" />
                   LinkedIn
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -86,7 +87,7 @@ export const Footer = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border/50 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <p>© {new Date().getFullYear()} Cetti Agentics. Todos os direitos reservados.</p>
-          <p>Feito com ❤️ por José Luiz</p>
+          <p>Feito por José Luiz Fagundes</p>
         </div>
       </div>
     </footer>
