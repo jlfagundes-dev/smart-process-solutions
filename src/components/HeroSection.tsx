@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/utils";
 
 export const HeroSection = () => {
   return (
@@ -74,9 +75,9 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="font-display mt-8 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            <span className="text-gradient">Menos Esforço.</span>
+            <span className="text-gradient">Simplificamos a tecnologia</span>
             <br />
-            <span className="text-foreground">Mais Resultado.</span>
+            <span className="text-foreground">para você crescer</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -97,9 +98,11 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button variant="hero" size="xl" className="group">
-              Fale com um Especialista
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="hero" size="xl" className="group" asChild>
+              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                Fale com um Especialista
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button variant="hero-outline" size="xl" asChild>
               <a href="#servicos">Conheça Nossas Soluções</a>
@@ -115,7 +118,7 @@ export const HeroSection = () => {
           >
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-              <span>17+ Anos de Experiência</span>
+              <span>20+ Anos de Experiência</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-primary animate-pulse animation-delay-200" />

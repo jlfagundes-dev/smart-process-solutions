@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/utils";
 
 const navLinks = [
   { href: "#servicos", label: "Soluções" },
@@ -44,7 +45,7 @@ export const Navbar = () => {
             <div className="flex flex-col">
               <span className="font-display text-lg font-bold tracking-tight">Cetti Agentics</span>
               <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-                Menos Esforço. Mais Resultado.
+                Simplificamos a tecnologia pra você crescer
               </span>
             </div>
           </a>
@@ -60,8 +61,10 @@ export const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="hero" size="default">
-              Falar com Especialista
+            <Button variant="hero" size="default" asChild>
+              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                Falar com Especialista
+              </a>
             </Button>
           </div>
 
@@ -93,8 +96,10 @@ export const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="lg" className="mt-4">
-                Falar com Especialista
+              <Button variant="hero" size="lg" className="mt-4" asChild>
+                <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                  Falar com Especialista
+                </a>
               </Button>
             </div>
           </motion.div>

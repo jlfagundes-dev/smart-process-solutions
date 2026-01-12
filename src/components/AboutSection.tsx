@@ -36,7 +36,7 @@ export const AboutSection = () => {
               do dia a dia com tecnologia prática, eficiente e acessível.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Com mais de 17 anos de experiência em desenvolvimento e integrações, criamos soluções sob medida que 
+              Com mais de 20 anos de experiência em desenvolvimento e integrações, criamos soluções sob medida que 
               geram resultados reais para o seu negócio.
             </p>
 
@@ -74,7 +74,7 @@ export const AboutSection = () => {
               {/* Center content */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="glass-card p-8 text-center glow-effect">
-                  <div className="font-display text-5xl font-bold text-gradient mb-2">17+</div>
+                  <div className="font-display text-5xl font-bold text-gradient mb-2">20+</div>
                   <div className="text-muted-foreground">Anos de Experiência</div>
                 </div>
               </div>
@@ -93,6 +93,27 @@ export const AboutSection = () => {
                 className="absolute bottom-16 left-4 glass-card px-4 py-2"
               >
                 <span className="text-sm font-medium">Inteligência Artificial</span>
+              </motion.div>
+              <motion.div
+                animate={{ y: [-8, 8, -8] }}
+                transition={{ duration: 5.5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-1/4 left-8 glass-card px-4 py-2"
+              >
+                <span className="text-sm font-medium">Atendimento Digital</span>
+              </motion.div>
+              <motion.div
+                animate={{ y: [8, -8, 8] }}
+                transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute top-1/2 right-4 glass-card px-4 py-2"
+              >
+                <span className="text-sm font-medium">ChatBots</span>
+              </motion.div>
+              <motion.div
+                animate={{ y: [-12, 12, -12] }}
+                transition={{ duration: 6.5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute bottom-8 right-12 glass-card px-4 py-2"
+              >
+                <span className="text-sm font-medium">Agentes Inteligentes</span>
               </motion.div>
             </div>
           </motion.div>

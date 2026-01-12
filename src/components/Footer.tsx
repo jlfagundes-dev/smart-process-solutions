@@ -20,7 +20,7 @@ export const Footer = () => {
               automação e agentes inteligentes.
             </p>
             <p className="mt-4 text-sm font-medium text-primary">
-              Menos Esforço. Mais Resultado.
+              Simplificamos a tecnologia pra você crescer
             </p>
           </div>
 

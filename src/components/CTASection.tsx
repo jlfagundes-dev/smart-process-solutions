@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/utils";
 
 export const CTASection = () => {
   return (
@@ -30,18 +31,20 @@ export const CTASection = () => {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="hero" size="xl" className="group">
-              <MessageCircle className="h-5 w-5" />
-              Fale com um Especialista
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="hero" size="xl" className="group" asChild>
+              <a href={getWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="h-5 w-5" />
+                Fale com um Especialista
+                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
-            <Button variant="hero-outline" size="xl">
-              Ver Soluções
+            <Button variant="hero-outline" size="xl" asChild>
+              <a href="#servicos">Ver Soluções</a>
             </Button>
           </div>
 
           <p className="mt-8 text-sm text-muted-foreground">
-            Menos Esforço. Mais Resultado.
+            Simplificamos a tecnologia pra você crescer
           </p>
         </motion.div>
       </div>
