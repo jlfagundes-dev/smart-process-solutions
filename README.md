@@ -1,53 +1,96 @@
-# Welcome to your Lovable project
+# Cetti Agentics
 
-## Project info
+Plataforma de landing page moderna da Cetti Agentics - especialista em automação de processos, chatbots e inteligência artificial para pequenas e médias empresas.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🌐 **Acesse em:** [cetti.me](https://cetti.me) | Hospedado na Vercel
 
-## How can I edit this code?
+## 🚀 Sobre a Empresa
 
-There are several ways of editing your application.
+A **Cetti Agentics** é uma empresa especializada em automação de processos, chatbots e inteligência artificial. Ajudamos pequenas e médias empresas a:
 
-**Use Lovable**
+- **Automatizar Atendimento no WhatsApp**: Responda seus clientes 24/7 com chatbots inteligentes
+- **Reduzir Tarefas Manuais**: Elimine processos repetitivos e melhore a produtividade
+- **Ganhar Eficiência**: Implemente tecnologia simples, acessível e que funciona
+- **Integrar Sistemas**: Conecte suas ferramentas (CRMs, ERPs, WhatsApp API e mais)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+**Atendemos Brasília e região.**
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **React** - Framework UI
+- **TypeScript** - Tipagem estática
+- **Vite** - Build tool de alta performance
+- **Tailwind CSS** - Estilização
+- **Shadcn/ui** - Componentes de UI reutilizáveis
+- **Framer Motion** - Animações fluidas
+- **React Router** - Navegação
+- **TanStack Query** - Gerenciamento de estado assíncrono
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Como Instalar
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Pré-requisitos
+- Node.js (v18+)
+- Bun ou npm/yarn
 
-Follow these steps:
+### Passos
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+```bash
+# 1. Clone o repositório
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Entre no diretório do projeto
+cd cetti-agentics
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Instale as dependências
+bun install
+# ou
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Inicie o servidor de desenvolvimento
+bun run dev
+# ou
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O projeto estará disponível em `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔨 Scripts Disponíveis
 
-**Use GitHub Codespaces**
+- `bun run dev` - Inicia o servidor de desenvolvimento com hot reload
+- `bun run build` - Compila o projeto para produção
+- `bun run preview` - Visualiza a build de produção localmente
+- `bun run lint` - Executa verificações de lint do código
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── Navbar.tsx       # Barra de navegação
+│   ├── HeroSection.tsx   # Seção principal
+│   ├── ServicesSection.tsx # Serviços oferecidos
+│   ├── AboutSection.tsx  # Sobre a empresa
+│   ├── CTASection.tsx    # Chamada para ação
+│   ├── Footer.tsx        # Rodapé
+│   └── ui/              # Componentes Shadcn/ui
+├── pages/               # Páginas da aplicação
+├── hooks/               # Custom hooks
+├── lib/                 # Utilitários
+└── App.tsx              # Componente raiz
+```
+
+## 🎨 Features
+
+- ✨ Design responsivo e moderno
+- 🎬 Animações suaves com Framer Motion
+- 📱 Otimizado para mobile
+- ♿ Acessibilidade incorporada
+- 🎯 CTA integrado com WhatsApp
+- 🚀 Performance otimizada com Vite
+
+## 📝 Licença
+
+Projeto desenvolvido para Cetti Agentics.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
